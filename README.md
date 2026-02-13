@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10-yellow?style=for-the-badge&logo=python)
 ![NLP](https://img.shields.io/badge/NLP-Procesamiento%20del%20Lenguaje%20Natural-blue?style=for-the-badge)
 ![Transformers](https://img.shields.io/badge/Transformers-HuggingFace-purple?style=for-the-badge)
-![Estado](https://img.shields.io/badge/Estado-En%20Proceso-orange?style=for-the-badge)
+![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen?style=for-the-badge)
 
 Este repositorio presenta **conceptos fundamentales y aplicaciones prácticas de Procesamiento del Lenguaje Natural (NLP) empleando Python**, abarcando desde la preparación de texto y la representación semántica hasta el entrenamiento, evaluación y despliegue de modelos modernos basados en deep learning.  
 El objetivo es **proporcionar una base sólida para desarrollar soluciones avanzadas en análisis y generación de lenguaje natural**.
