@@ -63,7 +63,7 @@ Se diseñó un pipeline completo de NLP utilizando Python y modelos modernos de 
 
 El sistema desarrollado permite:
 
-- Clasificar automáticamente reseñas con alta precisión  
+- Clasificar automáticamente reseñas con un 81% de presición
 - Escalar el análisis de opiniones sin intervención manual  
 - Transformar texto no estructurado en insights accionables  
 - Servir como base para sistemas de sentiment analysis en producción  
