@@ -1,44 +1,92 @@
-# Natural Language Processing (NLP) con Python y Transformers
+# 💬 ¿Positiva o negativa? Clasificación de opiniones con NLP y Transformers
 
 ![Python](https://img.shields.io/badge/Python-3.10-yellow?style=for-the-badge&logo=python)
 ![NLP](https://img.shields.io/badge/NLP-Procesamiento%20del%20Lenguaje%20Natural-blue?style=for-the-badge)
 ![Transformers](https://img.shields.io/badge/Transformers-HuggingFace-purple?style=for-the-badge)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen?style=for-the-badge)
 
-Este repositorio presenta **conceptos fundamentales y aplicaciones prácticas de Procesamiento del Lenguaje Natural (NLP) empleando Python**, abarcando desde la preparación de texto y la representación semántica hasta el entrenamiento, evaluación y despliegue de modelos modernos basados en deep learning.  
-El objetivo es **proporcionar una base sólida para desarrollar soluciones avanzadas en análisis y generación de lenguaje natural**.
+---
 
-## Contenido
-- **Preprocesamiento de texto:** Limpieza, tokenización, normalización, lematización y manejo de corpus.  
-- **Representación del lenguaje:** Bag of Words, TF-IDF, Word Embeddings (Word2Vec, GloVe, FastText).  
-- **Modelos clásicos de NLP:** Naive Bayes, SVM, regresión logística y modelos probabilísticos.  
-- **Deep Learning para NLP:** RNNs, LSTMs, GRUs, CNNs para texto y arquitecturas Transformer.  
-- **Modelos modernos:** BERT, RoBERTa, GPT, T5 y fine-tuning con Hugging Face.  
-- **Tareas principales:** Clasificación de texto, análisis de sentimiento, NER, QA, summarization y generación de texto.  
-- **Evaluación avanzada:** Accuracy, F1-score, BLEU, ROUGE, perplexity y análisis de sesgos lingüísticos.  
-- **Automatización del flujo de trabajo:** Pipelines reproducibles, experimentación controlada, tracking de modelos y gestión de checkpoints.  
-- **Documentación:** Justificación metodológica, decisiones arquitectónicas y buenas prácticas en ingeniería de NLP.
+## 📌 Situación (Problema de negocio)
 
-## Propósitos del proyecto
-- Comprender el **ciclo completo de desarrollo de sistemas NLP**, desde los datos textuales hasta la inferencia.  
-- Aplicar técnicas modernas para **modelar, comprender y generar lenguaje natural**.  
-- Construir modelos escalables y eficientes para entornos de investigación y producción.  
-- Establecer una metodología reproducible basada en **experimentación rigurosa y versionamiento de modelos**.  
+En plataformas digitales como Netflix, Amazon o IMDb, millones de usuarios generan reseñas de forma constante.
 
-## Tecnologías y herramientas
-- **Python:** Lenguaje principal para análisis y modelado de texto.  
-- **NLTK / SpaCy:** Procesamiento lingüístico clásico.  
-- **Hugging Face Transformers:** Entrenamiento y fine-tuning de modelos avanzados.  
-- **PyTorch / TensorFlow:** Frameworks para deep learning en NLP.  
-- **Scikit-learn:** Modelos tradicionales y pipelines de ML.  
-- **Pandas y NumPy:** Manipulación y análisis de datos textuales estructurados.  
-- **Matplotlib y Seaborn:** Visualización de métricas y resultados.  
-- **MLflow o Weights & Biases:** Seguimiento de experimentos.  
-- **Jupyter Notebook / VSCode:** Entornos recomendados para exploración interactiva.
+Analizar manualmente este volumen de opiniones no es viable, lo que genera problemas como:
 
-## Uso del repositorio
-1. Clonar el repositorio.  
-2. Revisar los notebooks y scripts organizados por tareas de NLP.  
-3. Ejecutar los modelos en un entorno con Python 3.10 o superior.  
-4. Ajustar datasets, arquitecturas y parámetros para adaptarlos a proyectos personalizados de NLP.  
+- Dificultad para identificar rápidamente la percepción del usuario  
+- Imposibilidad de escalar el análisis de feedback  
+- Falta de sistemas automáticos de clasificación de sentimiento  
+- Retrasos en la toma de decisiones basadas en opinión del cliente  
+
+Esto impacta directamente en la experiencia de usuario y en la toma de decisiones de producto y negocio.
+
+---
+
+## 🎯 Tarea (Objetivo del proyecto)
+
+Desarrollar un modelo de **Machine Learning supervisado** capaz de:
+
+- Clasificar automáticamente reseñas de películas y series como **positivas o negativas**  
+- Transformar texto no estructurado en una señal cuantificable de sentimiento  
+- Permitir análisis escalable del feedback de usuarios  
+- Servir como base para sistemas de análisis de opinión en plataformas digitales  
+
+---
+
+## ⚙️ Acción (Solución implementada)
+
+Se diseñó un pipeline completo de NLP utilizando Python y modelos modernos de Deep Learning:
+
+### 🔹 Procesamiento del texto
+- Limpieza y normalización de reseñas  
+- Tokenización y lematización  
+- Preparación del corpus para modelado  
+
+### 🔹 Representación del lenguaje
+- Bag of Words  
+- TF-IDF  
+- Word Embeddings  
+
+### 🔹 Modelos implementados
+- Modelos clásicos: Naive Bayes, SVM, Regresión Logística  
+- Modelos deep learning: RNN, LSTM  
+- Fine-tuning de modelos Transformer (Hugging Face, BERT-like models)  
+
+### 🔹 Evaluación
+- Accuracy  
+- Precision / Recall / F1-score  
+- Análisis de errores de clasificación  
+
+---
+
+## 📊 Resultado
+
+El sistema desarrollado permite:
+
+- Clasificar automáticamente reseñas con alta precisión  
+- Escalar el análisis de opiniones sin intervención manual  
+- Transformar texto no estructurado en insights accionables  
+- Servir como base para sistemas de sentiment analysis en producción  
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- Python (Pandas, NumPy)  
+- Scikit-learn  
+- NLTK / SpaCy  
+- PyTorch / TensorFlow  
+- Hugging Face Transformers  
+- Matplotlib / Seaborn  
+- Jupyter Notebook  
+
+---
+
+## 🚀 Uso del repositorio
+
+1. Clonar el repositorio  
+2. Instalar dependencias necesarias  
+3. Ejecutar notebooks de preprocesamiento de texto  
+4. Entrenar modelos clásicos o Transformers  
+5. Evaluar resultados con métricas de clasificación    
 
